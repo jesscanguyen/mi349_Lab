@@ -2,9 +2,45 @@ body {
     background-color: #fff;
     font-family: Helvetica, sans-serif;
     border-top: 15px solid #424242;
-    margin: 0;
+    margin: 0 auto;
+}
+
+main {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.masthead {
+    background-image: url("images/computer.jpg");
+    background-size: cover; /* img tries to cover entire bg of the div with the contraints of the img itself */
+    background-position: bottom;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.details {
+    display: flex; /*sets up the flex so that you dont have to use floating */
+    gap: 25px;
+}
+
+.details section {
+    flex-grow: 1;
+    flex-basis: 0; /* makes it so the text doesn't auto-expand to whatever space, makes it so its even */
+    background-color: #eee;
+    padding: 25px;
+    border-radius: 20px; /*rounded corners*/
+    margin-top: 25px;
 }
 
 img {
-    width: 100%
+    width: 100%;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+}
+
+p {
+    margin: 0;
+    line-height: 1.4em;
 }
