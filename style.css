@@ -3,6 +3,7 @@ body {
     font-family: Helvetica, sans-serif;
     border-top: 15px solid #424242;
     margin: 0 auto;
+    color: #424242;
 }
 
 main {
@@ -27,13 +28,43 @@ main {
     flex-grow: 1;
     flex-basis: 0; /* makes it so the text doesn't auto-expand to whatever space, makes it so its even */
     background-color: #eee;
-    padding: 25px;
     border-radius: 20px; /*rounded corners*/
     margin-top: 25px;
 }
 
+.details section p {
+    margin: 20px;
+}
+
+.details section h2 {
+    margin: 20px;
+}
+
+.details section.with-code {
+    padding: 0;
+}
+
+div.code-html {
+    padding: 25px;
+    background: #424242;
+    color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
 img {
     width: 100%;
+}
+
+h1 {
+    background-image: url("images/Logo.png"); /*bc headers are blocks */
+    font-size: 3em;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    padding-left: 55px; /* padding adds space INSIDE*/
+    background-position: center left;
+    margin: 100px 0 25px 0;
 }
 
 h2 {
